@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-image: url(:/image/2.jpg);
+}
+QPushButton{
+background-color: rgb(255, 170, 0);
+border-style:outset;
+border-width:4px;
+border-radius:10px;
+	border-color: rgb(255, 170, 127);
+font:bold 20px;color:rgb(255, 255, 255);
+padding: 6px;
+
+}
+QPushButton:pressed{
+background-color: rgb(255, 85, 0);
+	border-color: rgb(255, 170, 0);
+border-style:inset;
+}</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>300</y>
+     <width>130</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>START</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>390</y>
+     <width>130</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HELP</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>480</y>
+     <width>130</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CLOSE</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>507</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>686</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
